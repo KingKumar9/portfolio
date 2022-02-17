@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 class App extends React.Component {
   render() {
     return (
-      <Container>
+      <Container fluid>
         <Row>
           <Col>1 of 1</Col>
         </Row>
