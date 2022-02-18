@@ -1,16 +1,24 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 
 class App extends React.Component {
   render() {
     return (
       <Container fluid>
-        <Row>
-          <Col>1 of 1</Col>
+        <Row className="nav">
+          <Nav variant="pills" className="justify-content-center" defaultActiveKey="link-1">
+            <Nav.Item>
+              <Nav.Link eventKey="link-1">home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-2">projects</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="link-3">experience</Nav.Link>
+            </Nav.Item>
+          </Nav>
         </Row>
       </Container>
     )
