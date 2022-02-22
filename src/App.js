@@ -31,14 +31,18 @@ class App extends React.Component {
               <button><FontAwesomeIcon icon={ faArrowAltCircleDown } /> download cv</button>
             </a>
           </div>
-          <div>
-            <h4 className='footer-text'>Made with React <FontAwesomeIcon icon={ faReact } /> & Font Awesome <FontAwesomeIcon icon={ faFontAwesome } /></h4>
+          <div className='footer-text'>
+            <h4 className='madewith-text'>made with</h4>
+            <div className='icons'>
+              <span className='react-icon'>react <FontAwesomeIcon icon={ faReact } /></span>
+              <span className='fontawesome-icon'>font awesome <FontAwesomeIcon icon={ faFontAwesome } /></span>
+            </div>
           </div>
           <div className='profiles'>
-            <a href='https://github.com/KingKumar9'>
+            <a className='github-icon' href='https://github.com/KingKumar9'>
               <FontAwesomeIcon icon={ faGithub } />
             </a>
-            <a href='https://www.linkedin.com/in/rajat-kumar-66ba72175/'>
+            <a className='linkedin-icon' href='https://www.linkedin.com/in/rajat-kumar-66ba72175/'>
               <FontAwesomeIcon icon={ faLinkedin } />
             </a>
           </div>

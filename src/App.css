@@ -22,33 +22,39 @@
 .header > div {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name {
-  
+  color: white;
+  text-transform: uppercase;
 }
 
 .links {
 
 }
 
-.body {
-  grid-area: 4/1/11/13;
-  display: flex;
-  flex-direction: row;
+.links > button {
+  text-transform: uppercase;
 }
 
-.body > div {
-  width: 50%;
-  height: 100%;
+.body {
+  grid-area: 4/1/11/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
 .card {
-
+  grid-area: 2/2/12/6;
+  background-color: green;
 }
 
 .text {
-
+  grid-area: 2/6/12/12;
+  background-color: blue;
 }
 
 .footer {
@@ -59,18 +65,68 @@
 }
 
 .footer > div {
-  width: 50%;
+  width: 33.3%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cv {
 
 }
 
+.cv > button {
+  text-transform: uppercase;
+}
+
 .footer-text {
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.madewith-text {
+  color: white;
+}
+
+.icons > span {
+  width: 50%;
+}
+
+.madewith-text, .icons {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.react-icon {
+  color: #61DBFB;
+  background-color: rgba(138, 138, 138, 0.5);
+  float: left;
+}
+
+.fontawesome-icon {
+  color: #558fd5;
+  float: right;
+  background-color: rgba(202, 202, 202, 0.5);
 }
 
 .profiles {
 
+}
+
+.github-icon {
+
+}
+
+.github-icon > svg {
+  color: #171515;
+}
+
+.linkedin-icon {
+
+}
+
+.linkedin-icon > svg {
+  color: #0e76a8;
 }
