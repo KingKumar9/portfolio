@@ -8,9 +8,9 @@ class Header extends React.Component {
                     <h1>rajat kumar</h1>
                 </div>
                 <div className='links'>
-                    <button>Home</button>
-                    <button>Projects</button>
-                    <button>Experience</button>
+                    <button>homepage</button>
+                    <button>projects</button>
+                    <button>experience</button>
                 </div>
             </div>
         )
