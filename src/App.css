@@ -82,10 +82,11 @@
 
 .links > button:hover {
   cursor: pointer;
+  font-weight: 600;
   color: #fff;
   background-color: #171515;
   border: 1px solid #4b6cb7;
-  transition: all 250ms ease-in;
+  transition: all 200ms ease-in;
 }
 
 
