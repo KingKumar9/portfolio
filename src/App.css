@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/* Change this so that the 'active button' is given these properties */
+#h {
+  font-weight: 600;
+  color: #fff;
+  background-color: #171515;
+  border: 1px solid #4b6cb7;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -14,6 +22,10 @@
   background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7);
   background: linear-gradient(to bottom, #182848, #4b6cb7);
 }
+
+
+
+
 
 .header {
   grid-area: 1/1/4/13;
@@ -44,7 +56,7 @@
   content: '';
   position: absolute;
   width: 40vw;
-  border: 2px solid black;
+  border: 2px solid #000;
   z-index: 0;
 }
 
@@ -54,31 +66,31 @@
 
 .links > button {
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: 1.2vw;
   border: none;
   margin: 1vw;
-  padding: 1vw;
+  padding: 0.5vw 1.5vw;
   border-radius: 10vw;
-  background-color: white;
-  color: #182848;
-  border: 1px solid black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.links > button:first-child {
-  font-weight: 600;
-  color: white;
-  background-color: #4b6cb7;
-}
-
-.links > button:first-child:hover {
   background-color: #182848;
-  transition: all 250ms ease-in;
+  color: #fff;
+  border: 1px solid #4b6cb7;
+  box-shadow: 0 0 15px 10px #182848;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 .links > button:hover {
   cursor: pointer;
+  color: #fff;
+  background-color: #171515;
+  border: 1px solid #4b6cb7;
+  transition: all 250ms ease-in;
 }
+
+
+
+
 
 .body {
   grid-area: 4/1/11/13;
@@ -87,82 +99,22 @@
   grid-template-rows: repeat(12, 1fr);
 }
 
+
+
+
+
 .card {
   grid-area: 2/2/12/6;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+  border: 1px solid #4b6cb7;
   border-radius: 5%;
-  box-shadow: 5px 7px 25px 13px #182848;
+  box-shadow: 5px 5px 25px 15px #182848;
+  overflow: hidden;
 }
 
 .card:hover {
-
-}
-
-.text {
-  grid-area: 2/7/12/12;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: scroll;
-}
-
-.text > div > h2 {
-  color: white;
-  font-size: 1.8vw;
-}
-
-.text > div > p {
-  color: rgb(199, 199, 199);
-  font-size: 1.3vw;
-}
-
-.footer {
-  grid-area: 12/1/13/13;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #171515;
-  border-top: 3px solid #182848;
-}
-
-.footer > p {
-  color: rgb(174, 174, 174);
-  text-transform: uppercase;
-  font-size: 1vw;
-}
-
-.cv {
-  grid-area: 12/1/13/13;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color: #4b6cb7;
-  text-decoration: none;
-  border-radius: 0 0 10px 10px;
-  padding: 5px 10px;
-}
-
-.cv > p {
-  width: auto;
-  height: auto;
-  border: none;
-  background-color: inherit;
-  text-transform: uppercase;
-  font-size: 1.2vw;
-  color: #ffffff;
-  margin-left: 10px;
-}
-
-.cv:hover, .cv:hover > p {
-  cursor: pointer;
-  background-color: #182848;
-  transition: all 250ms ease-in;
-}
-
-.profiles {
 
 }
 
@@ -180,4 +132,98 @@
 
 .linkedin-icon > svg {
   color: #0e76a8;
+}
+
+.cv {
+  grid-area: 11/1/13/13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #4b6cb7;
+  border-top: 1px solid #4b6cb7;
+}
+
+.cv > svg {
+  font-size: 1.75vw;
+}
+
+.cv > p {
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: inherit;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.cv:hover, .cv:hover > p {
+  cursor: pointer;
+  background-color: #171515;
+  transition: all 250ms ease-in;
+}
+
+
+
+
+
+.text {
+  grid-area: 1/8/13/12;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.text > div > h2 {
+  color: white;
+  font-size: 1.8vw;
+}
+
+.text > div > p {
+  color: rgb(199, 199, 199);
+  font-size: 1.3vw;
+}
+
+.text::before {
+  content: '';
+  position: absolute;
+  left: 51%;
+  height: 50%;
+  border: 0.1px solid #182848;
+  opacity: 0.3;
+  box-shadow: 0 0 30px 1px #182848;
+}
+
+
+
+
+
+.projects, .experience {
+  grid-area: 1/2/13/12;
+  border: 1px solid black;
+}
+
+
+
+
+
+.footer {
+  grid-area: 12/1/13/13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171515;
+  border-top: 3px solid #182848;
+}
+
+.footer > p {
+  color: rgb(174, 174, 174);
+  text-transform: uppercase;
+  font-size: 1vw;
 }

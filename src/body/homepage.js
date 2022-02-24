@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons';
 
-class Body extends React.Component {
+class Homepage extends React.Component {
     render() {
         return (
             <div className='body'>
@@ -55,4 +55,4 @@ class Body extends React.Component {
     }
 }
 
-export default Body;
+export default Homepage;
