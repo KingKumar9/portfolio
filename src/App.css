@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Change this so that the 'active button' is given these properties */
-#h {
-  font-weight: 600;
-  color: #fff;
-  background-color: #171515;
-  border: 1px solid #4b6cb7;
-}
-
 .container {
   width: 100vw;
   height: 100vh;
@@ -67,7 +59,6 @@
 .links > button {
   text-transform: uppercase;
   font-size: 1.2vw;
-  border: none;
   margin: 1vw;
   padding: 0.5vw 1.5vw;
   border-radius: 10vw;
@@ -80,13 +71,16 @@
   text-decoration: none;
 }
 
+@keyframes buttons {
+  100% {
+    background-color: #171515;
+  }
+}
+
 .links > button:hover {
   cursor: pointer;
   font-weight: 600;
-  color: #fff;
-  background-color: #171515;
-  border: 1px solid #4b6cb7;
-  transition: all 200ms ease-in;
+  animation: buttons 250ms ease-in forwards;
 }
 
 
@@ -119,11 +113,81 @@
 
 }
 
+.pic {
+  grid-area: 2/2/5/5;
+  overflow: hidden;
+  border: 1px solid #4b6cb7;
+  border-radius: 10px;
+}
+
+.pic > img {
+  max-width: 100%;
+  height: auto;
+  transform: scaleX(-1);
+}
+
+.info {
+  grid-area: 2/5/5/12;
+}
+
+.info > div {
+  display: flex;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.info > div > p {
+  text-align: right;
+  width: 100%;
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 65%;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.25em;
+  word-spacing: 0.25em;
+}
+
+.overview {
+  grid-area: 6/2/10/12;
+  font-family: sans-serif;
+}
+
+.overview > div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.overview > div > h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 12px;
+}
+
+.overview > p {
+  color: #ddd;
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.github-icon > a > svg, .linkedin-icon > a > svg {
+  margin-left: 10px;
+  font-size: 125%;
+  color: #182848;
+}
+
+.github-icon, .linkedin-icon {
+  
+}
+
 .github-icon {
 
 }
 
-.github-icon > svg {
+.github-icon > a > svg:hover, .github-icon{
   color: #171515;
 }
 
@@ -131,7 +195,7 @@
 
 }
 
-.linkedin-icon > svg {
+.linkedin-icon > a > svg:hover, .linkedin-icon {
   color: #0e76a8;
 }
 
@@ -144,6 +208,11 @@
   color: #ffffff;
   background-color: #4b6cb7;
   border-top: 1px solid #4b6cb7;
+}
+
+.cv:hover {
+  cursor: pointer;
+  animation: buttons 250ms ease-in forwards;
 }
 
 .cv > svg {
@@ -163,12 +232,6 @@
   margin-left: 10px;
 }
 
-.cv:hover, .cv:hover > p {
-  cursor: pointer;
-  background-color: #171515;
-  transition: all 250ms ease-in;
-}
-
 
 
 
@@ -182,12 +245,12 @@
 }
 
 .text > div > h2 {
-  color: white;
+  color: #fff;
   font-size: 1.8vw;
 }
 
 .text > div > p {
-  color: rgb(199, 199, 199);
+  color: #c7c7c7;
   font-size: 1.3vw;
 }
 

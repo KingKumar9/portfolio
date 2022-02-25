@@ -11,10 +11,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      body: <Homepage />
+      body: <Homepage />,
+      hActive: true,
+      pActive: false,
+      eActive: false
     }
     this.handleClick = this.handleClick.bind(this)
   }
+
 
   handleClick = (e) => {
     e.preventDefault();
@@ -23,17 +27,26 @@ class App extends React.Component {
     switch (linkId) {
       case 'h':
         this.setState({
-          body: <Homepage />
+          body: <Homepage />,
+          hActive: true,
+          pActive: false,
+          eActive: false
         })
         break;
       case 'p':
         this.setState({
-          body: <Projects />
+          body: <Projects />,
+          hActive: false,
+          pActive: true,
+          eActive: false
         })
         break;
       case 'e':
         this.setState({
-          body: <Experience />
+          body: <Experience />,
+          hActive: false,
+          pActive: false,
+          eActive: true
         })
         break;
       default:
@@ -43,6 +56,11 @@ class App extends React.Component {
   
 
   render() {
+    const activeButton = {
+      backgroundColor: '#171515',
+      fontWeight: 600
+    }
+
     return (
       <div className='container'>
         <div className='header'>
@@ -50,16 +68,16 @@ class App extends React.Component {
             <h1>rajat kumar</h1>
           </div>
           <div className='links'>
-            <button id='h' onClick={ this.handleClick }>homepage</button>
-            <button id='p' onClick={ this.handleClick }>projects</button>
-            <button id='e' onClick={ this.handleClick }>experience</button>
+            <button id='h' style={ this.state.hActive ? activeButton : null } onClick={ this.handleClick }>homepage</button>
+            <button id='p' style={ this.state.pActive ? activeButton : null } onClick={ this.handleClick }>projects</button>
+            <button id='e' style={ this.state.eActive ? activeButton : null } onClick={ this.handleClick }>experience</button>
           </div>
         </div>
 
         { this.state.body }
 
         <div className='footer'>
-          <p>made with react, bootstrap & fontawesome</p>
+          <p>made with react & fontawesome</p>
         </div>
       </div>
     )
