@@ -59,6 +59,8 @@ class Homepage extends React.Component {
                     </a>
                 </div>
 
+
+
                 <div className='text'>
                     <div>
                         <h2>UI/UX Designer</h2>
