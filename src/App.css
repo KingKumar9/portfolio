@@ -115,37 +115,30 @@
 
 .pic {
   grid-area: 2/2/5/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   border: 1px solid #4b6cb7;
   border-radius: 10px;
 }
 
 .pic > img {
-  max-width: 100%;
-  height: auto;
-  transform: scaleX(-1);
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .info {
   grid-area: 2/5/5/12;
+  display: flex;
+  flex-direction: row;
 }
 
 .info > div {
   display: flex;
-  width: 100%;
-  padding: 10px 0;
-}
-
-.info > div > p {
-  text-align: right;
-  width: 100%;
-  color: #eee;
-  text-transform: uppercase;
-  font-size: 65%;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.25em;
-  word-spacing: 0.25em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overview {
@@ -153,29 +146,41 @@
   font-family: sans-serif;
 }
 
-.overview > div {
+.overview::before {
+  content: '';
   display: flex;
-  width: 100%;
   justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 18px;
+  border: 0.1px solid #182848;
+  opacity: 0.3;
+  box-shadow: 0 0 30px 1px #182848;
 }
 
-.overview > div > h4 {
-  text-transform: uppercase;
+.overview > h4 {
+  text-transform: capitalize;
   font-weight: 600;
   color: #eee;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .overview > p {
-  color: #ddd;
-  text-align: center;
-  font-size: 15px;
+  color: #c2c2c2;
+  font-size: 90%;
+  font-family: Arial;
   line-height: 20px;
+}
+
+.icons {
+  width: 25%;
+  height: 100%;
+  gap: 15%;
 }
 
 .github-icon > a > svg, .linkedin-icon > a > svg {
   margin-left: 10px;
-  font-size: 125%;
+  font-size: 175%;
   color: #182848;
 }
 
@@ -197,6 +202,18 @@
 
 .linkedin-icon > a > svg:hover, .linkedin-icon {
   color: #0e76a8;
+}
+
+.info-text {
+  width: 75%;
+  height: 100%;
+}
+
+.info-text > h3 {
+  text-transform: uppercase;
+  color: #182848;
+  font-size: 85%;
+  
 }
 
 .cv {

@@ -21,26 +21,13 @@ class Homepage extends React.Component {
                 <div className='card'>
                     <div className='pic'>
                         <img 
-                        src='https://i.pinimg.com/originals/34/28/4b/34284bb8f5fbbdc243e8d3afd3c6f8d8.jpg' 
+                        src='https://www.ucreative.com/wp-content/uploads/2014/05/52-870x539.jpg' 
                         alt='Profile Picture' 
                         />
                     </div>
 
                     <div className='info'>
-                        <div>
-                            <p>rajat kumar</p>
-                        </div>
-                        <div>
-                            <p>0430585812</p>
-                        </div>
-                        <div>
-                            <p>rajatk12199@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div className='overview'>
-                        <div>
-                            <h4>about me</h4>
+                        <div className='icons'>
                             <div className='github-icon'>
                                 <a  href='https://github.com/KingKumar9'>
                                     <FontAwesomeIcon icon={ faGithub } />
@@ -52,21 +39,18 @@ class Homepage extends React.Component {
                                 </a>
                             </div>
                         </div>
-                        
+                        <div className='info-text'>
+                            <h3>a jack of all trades</h3>
+                        </div>
+                    </div>
+
+                    <div className='overview'>
+                        <h4>about me</h4>
                         <p>
                             I am currently 23 years old, I have been in the tech industry since I was 19.
-                            As a self taught developer who is deeply fascinated by technology and art, 
+                            As a self taught developer who is deeply fascinated by gaming, technology and art, 
                             I enjoy working on my craft and challenging myself.
-                            You could say i'm a jack of all trades.
                         </p>
-                    </div>
-
-                    <div className='github-icon'>
-                        
-                    </div>
-
-                    <div className='linkedin-icon'>
-                        
                     </div>
 
                     <a className='cv' onClick={ this.alertPopUp } href='rajatkumar-cv.docx' download>
