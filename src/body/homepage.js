@@ -10,6 +10,7 @@ class Homepage extends React.Component {
         this.alertPopUp = this.alertPopUp.bind(this)
     }
 
+    /* Fix This onClick={ this.alertPopUp } */
     alertPopUp = () => {
         alert('download successful!!');
     }
@@ -53,7 +54,7 @@ class Homepage extends React.Component {
                         </p>
                     </div>
 
-                    <a className='cv' onClick={ this.alertPopUp } href='rajatkumar-cv.docx' download>
+                    <a className='cv' href='rajatkumar-cv.docx' download>
                         <FontAwesomeIcon icon={ faArrowAltCircleDown } />
                         <p>download cv</p>
                     </a>
