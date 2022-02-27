@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #182848;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -37,7 +46,7 @@
   color: #fff;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-size: 4vw;
+  font-size: 300%;
   font-weight: 500;
   word-spacing: 1vw;
   letter-spacing: 0.15vw;
@@ -58,7 +67,7 @@
 
 .links > button {
   text-transform: uppercase;
-  font-size: 1.2vw;
+  font-size: 90%;
   margin: 1vw;
   padding: 0.5vw 1.5vw;
   border-radius: 10vw;
@@ -222,7 +231,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   background-color: #4b6cb7;
   border-top: 1px solid #4b6cb7;
 }
@@ -233,7 +242,7 @@
 }
 
 .cv > svg {
-  font-size: 1.75vw;
+  font-size: 150%;
 }
 
 .cv > p {
@@ -242,7 +251,7 @@
   border: none;
   background-color: inherit;
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 120%;
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
@@ -263,12 +272,12 @@
 
 .text > div > h2 {
   color: #fff;
-  font-size: 1.8vw;
+  font-size: 150%;
 }
 
 .text > div > p {
   color: #c7c7c7;
-  font-size: 1.3vw;
+  font-size: 110%;
 }
 
 .text::before {
@@ -279,15 +288,6 @@
   border: 0.1px solid #182848;
   opacity: 0.3;
   box-shadow: 0 0 30px 1px #182848;
-}
-
-
-
-
-
-.projects, .experience {
-  grid-area: 1/2/13/12;
-  border: 1px solid black;
 }
 
 
@@ -306,5 +306,96 @@
 .footer > p {
   color: rgb(174, 174, 174);
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: 80%;
+}
+
+
+
+
+
+.projects {
+  grid-area: 1/1/13/13;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px;
+  gap: 25px;
+  overflow-x: scroll;
+}
+
+.project-card {
+  min-width: 250px;
+  height: 50vh;
+  border-radius: 25px;
+  border: 1px solid #4b6cb7;
+  box-shadow: 0 0 25px 15px #182848;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transition: all 250ms ease-in-out;
+  transform: scale(1.05);
+}
+
+.project-card > div, .project-card > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  grid-area: 1/1/7/13;
+}
+
+.project-img > img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.project-title {
+  grid-area: 7/1/8/13;
+  background-color: #4b6cb7;
+}
+
+.project-title > h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 90%;
+  color: #fff;
+}
+
+.project-links {
+  grid-area: 8/2/13/12;
+  gap: 25px;
+}
+
+.project-github, .project-site {
+  border-radius: 10px;
+  background-color: #4b6cb7;
+  width: 40%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-github:hover, .project-site:hover {
+  border: 1px solid #182848;
+}
+
+.project-github > svg, .project-site > svg {
+  font-size: 200%;
+  color: #171515;
+}
+
+
+
+
+
+.experience {
+  grid-area: 1/2/13/12;
+  border: 1px solid black;
 }
