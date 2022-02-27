@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e26bf6c2.css",
-    "main.js": "/portfolio/static/js/main.17e710e9.js",
+    "main.css": "/portfolio/static/css/main.b5c4b0dd.css",
+    "main.js": "/portfolio/static/js/main.cfc82cc5.js",
+    "static/media/javascript-calculator.png": "/portfolio/static/media/javascript-calculator.0cb82bffb9554feeecb7.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.d3d3e67a5ae4e2526176.png",
+    "static/media/markdown-previewer.png": "/portfolio/static/media/markdown-previewer.fef9c03206f538b6fb15.png",
+    "static/media/drum-machine.png": "/portfolio/static/media/drum-machine.feb76ef2d3862d5503a2.png",
+    "static/media/random-quote-machine.png": "/portfolio/static/media/random-quote-machine.1ca701281b4dbd8b4557.png",
+    "static/media/pomodoro-clock.png": "/portfolio/static/media/pomodoro-clock.507c6e4cabc5d7d944d0.png",
     "index.html": "/portfolio/index.html",
-    "main.e26bf6c2.css.map": "/portfolio/static/css/main.e26bf6c2.css.map",
-    "main.17e710e9.js.map": "/portfolio/static/js/main.17e710e9.js.map"
+    "main.b5c4b0dd.css.map": "/portfolio/static/css/main.b5c4b0dd.css.map",
+    "main.cfc82cc5.js.map": "/portfolio/static/js/main.cfc82cc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e26bf6c2.css",
-    "static/js/main.17e710e9.js"
+    "static/css/main.b5c4b0dd.css",
+    "static/js/main.cfc82cc5.js"
   ]
 }
