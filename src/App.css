@@ -187,13 +187,15 @@
   gap: 15%;
 }
 
-.github-icon > a > svg, .linkedin-icon > a > svg {
+.github-icon > a > svg, 
+.linkedin-icon > a > svg {
   margin-left: 10px;
   font-size: 175%;
   color: #182848;
 }
 
-.github-icon, .linkedin-icon {
+.github-icon, 
+.linkedin-icon {
   
 }
 
@@ -201,7 +203,8 @@
 
 }
 
-.github-icon > a > svg:hover, .github-icon{
+.github-icon, 
+.github-icon > a > svg:hover {
   color: #171515;
 }
 
@@ -209,7 +212,8 @@
 
 }
 
-.linkedin-icon > a > svg:hover, .linkedin-icon {
+.linkedin-icon,
+.linkedin-icon > a > svg:hover {
   color: #0e76a8;
 }
 
@@ -340,7 +344,8 @@
   transform: scale(1.05);
 }
 
-.project-card > div, .project-card > a {
+.project-card > div, 
+.project-card > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,7 +377,8 @@
   gap: 25px;
 }
 
-.project-github, .project-site {
+.project-github, 
+.project-site {
   border-radius: 10px;
   background-color: #4b6cb7;
   width: 40%;
@@ -382,14 +388,21 @@
   align-items: center;
 }
 
-.project-github:hover, .project-site:hover {
-  border: 1px solid #182848;
-}
-
-.project-github > svg, .project-site > svg {
+.project-github > svg, 
+.project-site > svg {
   font-size: 200%;
   color: #171515;
 }
+
+.project-github:hover, 
+.project-site:hover, 
+.project-github:hover svg path,
+.project-site:hover svg path {
+  color: #4b6cb7;
+  background-color: #182848;
+  border: 1px solid #000;
+}
+
 
 
 

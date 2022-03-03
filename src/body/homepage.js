@@ -30,12 +30,12 @@ class Homepage extends React.Component {
                     <div className='info'>
                         <div className='icons'>
                             <div className='github-icon'>
-                                <a  href='https://github.com/KingKumar9'>
+                                <a href='https://github.com/KingKumar9' target='_blank' rel='noreferrer'>
                                     <FontAwesomeIcon icon={ faGithub } />
                                 </a>
                             </div>
                             <div className='linkedin-icon'>
-                                <a href='https://www.linkedin.com/in/rajat-kumar-66ba72175/'>
+                                <a href='https://www.linkedin.com/in/rajat-kumar-66ba72175/' target='_blank' rel='noreferrer'>
                                     <FontAwesomeIcon icon={ faLinkedin } />
                                 </a>
                             </div>
@@ -48,8 +48,8 @@ class Homepage extends React.Component {
                     <div className='overview'>
                         <h4>about me</h4>
                         <p>
-                            I am currently 23 years old, I have been in the tech industry since I was 19.
-                            As a self taught developer who is deeply fascinated by gaming, technology and art, 
+                            I am currently 23 years old; I have been in the tech industry since I was 19.
+                            As a self-taught developer who is deeply fascinated by gaming, technology and art, 
                             I enjoy working on my craft and challenging myself.
                         </p>
                     </div>
