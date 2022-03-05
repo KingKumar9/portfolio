@@ -30,12 +30,12 @@ class Homepage extends React.Component {
                     <div className='info'>
                         <div className='icons'>
                             <div className='github-icon'>
-                                <a href='https://github.com/KingKumar9' target='_blank' rel='noreferrer'>
+                                <a href='https://github.com/KingKumar9' title='View Github Profile' target='_blank' rel='noreferrer'>
                                     <FontAwesomeIcon icon={ faGithub } />
                                 </a>
                             </div>
                             <div className='linkedin-icon'>
-                                <a href='https://www.linkedin.com/in/rajat-kumar-66ba72175/' target='_blank' rel='noreferrer'>
+                                <a href='https://www.linkedin.com/in/rajat-kumar-66ba72175/' title='View LinkedIn Profile' target='_blank' rel='noreferrer'>
                                     <FontAwesomeIcon icon={ faLinkedin } />
                                 </a>
                             </div>

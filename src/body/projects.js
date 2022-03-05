@@ -70,10 +70,10 @@ class Projects extends React.Component {
                                     <h3>{ proj.title }</h3>
                                 </div>
                                 <div className='project-links'>
-                                    <a href={ proj.github }  target='_blank' rel='noreferrer' className='project-github'>
+                                    <a href={ proj.github } title='View Project on Github' target='_blank' rel='noreferrer' className='project-github'>
                                         <FontAwesomeIcon icon={ faGithub } />
                                     </a>
-                                    <a href={ proj.website } target='_blank' rel='noreferrer' className='project-site'>
+                                    <a href={ proj.website } title='View Website' target='_blank' rel='noreferrer' className='project-site'>
                                         <FontAwesomeIcon icon={ faLink } />
                                     </a>
                                 </div>
