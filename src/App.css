@@ -187,14 +187,14 @@
   gap: 15%;
 }
 
-.github-icon > a > svg, 
+.github-icon > a > svg,
 .linkedin-icon > a > svg {
   margin-left: 10px;
   font-size: 175%;
   color: #182848;
 }
 
-.github-icon, 
+.github-icon,
 .linkedin-icon {
   
 }
@@ -203,7 +203,7 @@
 
 }
 
-.github-icon, 
+.github-icon,
 .github-icon > a > svg:hover {
   color: #171515;
 }
@@ -344,7 +344,7 @@
   transform: scale(1.05);
 }
 
-.project-card > div, 
+.project-card > div,
 .project-card > a {
   display: flex;
   justify-content: center;
@@ -377,7 +377,7 @@
   gap: 25px;
 }
 
-.project-github, 
+.project-github,
 .project-site {
   border-radius: 10px;
   background-color: #4b6cb7;
@@ -388,14 +388,14 @@
   align-items: center;
 }
 
-.project-github > svg, 
+.project-github > svg,
 .project-site > svg {
   font-size: 200%;
   color: #171515;
 }
 
-.project-github:hover, 
-.project-site:hover, 
+.project-github:hover,
+.project-site:hover,
 .project-github:hover svg path,
 .project-site:hover svg path {
   color: #4b6cb7;
@@ -410,5 +410,12 @@
 
 .experience {
   grid-area: 1/2/13/12;
-  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.experience > h2 {
+  color: white;
 }

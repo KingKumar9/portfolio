@@ -48,7 +48,7 @@ class Homepage extends React.Component {
                     <div className='overview'>
                         <h4>about me</h4>
                         <p>
-                            I am currently 23 years old; I have been in the tech industry since I was 19.
+                            I am currently 23 years old; I have been in the tech industry since I was 20.
                             As a self-taught developer who is deeply fascinated by gaming, technology and art, 
                             I enjoy working on my craft and challenging myself.
                         </p>
